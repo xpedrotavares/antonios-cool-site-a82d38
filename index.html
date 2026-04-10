@@ -162,7 +162,7 @@
     background: #e42313;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 12px 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -171,16 +171,17 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    height: 36px;
+    white-space: normal;
+    word-wrap: break-word;
   }
 
   body.body-9 {
-    padding-top: 36px;
+    padding-top: 56px;
   }
 
   .navbar.w-nav {
     position: fixed;
-    top: 36px;
+    top: 56px;
     left: 0;
     right: 0;
     z-index: 999;
@@ -189,6 +190,21 @@
 
   .hero-vaccinemais {
     margin-top: 60px;
+  }
+
+  @media (max-width: 480px) {
+    .maintenance-banner {
+      font-size: 14px;
+      padding: 10px 8px;
+    }
+
+    body.body-9 {
+      padding-top: 48px;
+    }
+
+    .navbar.w-nav {
+      top: 48px;
+    }
   }
 </style>
 
